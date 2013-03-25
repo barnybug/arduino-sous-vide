@@ -160,7 +160,7 @@ void PID::SetMode(int Mode)
  ******************************************************************************/ 
 void PID::Initialize()
 {
-   ITerm = *myOutput;
+   ITerm = 0;
    lastInput = *myInput;
    if(ITerm > outMax) ITerm = outMax;
    else if(ITerm < outMin) ITerm = outMin;
