@@ -131,6 +131,12 @@ void loop()
       case KEYPAD_DOWN:
         setpoint -= 0.1;
         break;
+      case KEYPAD_LEFT:
+        setpoint -= 1.0;
+        break;
+      case KEYPAD_RIGHT:
+        setpoint += 1.0;
+        break;
     }
 
     switch(b) {
